@@ -1,6 +1,5 @@
 const db = require("../../data/dbConfig");
 
-// join tasks with projects
 const find = () => {
   return db("tasks as t")
     .select("t.*", "p.project_name", "p.project_description")
